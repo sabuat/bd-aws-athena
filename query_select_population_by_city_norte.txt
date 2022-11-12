@@ -1,0 +1,5 @@
+select city as "Cidade",
+	sum(population) as "População"
+from "exercicio-dio"."population_brazil"
+where region = 'Norte'
+group by city;
